@@ -1,6 +1,6 @@
 <!-- resources/views/components/reviews.blade.php -->
 <div class="reviews-container bg-gray-50 py-10">
-    <h2 class="text-3xl font-semibold text-center mb-6">Co o nás říkají naši zákazníci</h2>
+    <h2 class="text-3xl font-semibold font-BebasNeue text-center mb-6">Co o nás říkají naši zákazníci</h2>
 
     <!-- Flex container pro čtyři sloupce -->
     <div class="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -17,7 +17,7 @@
                 <div class="flex mb-2 stars-only">
                     <span class="text-yellow-500">★★★★★</span>
                 </div>
-                <div class="review-text text-gray-600 opacity-0 max-h-0 overflow-hidden transition-all duration-500">
+                <div class="review-text font-Roboto font-semibold text-gray-600 opacity-0 max-h-0 overflow-hidden transition-all duration-500">
                     <p>"Skvélé produkty a velmi rychlé dodání! Určitě se vrátím na další nákup!"</p>
                 </div>
             </div>
@@ -36,7 +36,7 @@
                 <div class="flex mb-2 stars-only">
                     <span class="text-yellow-500">★★★★☆</span>
                 </div>
-                <div class="review-text text-gray-600 opacity-0 max-h-0 overflow-hidden transition-all duration-500">
+                <div class="review-text font-Roboto font-semibold text-gray-600 opacity-0 max-h-0 overflow-hidden transition-all duration-500">
                     <p>"Kvalita produktů je výborná. Doporučuji každému, kdo hledá kvalitní zboží za dobrou cenu!"</p>
                 </div>
             </div>
@@ -55,7 +55,7 @@
                 <div class="flex mb-2 stars-only">
                     <span class="text-yellow-500">★★★★★</span>
                 </div>
-                <div class="review-text text-gray-600 opacity-0 max-h-0 overflow-hidden transition-all duration-500">
+                <div class="review-text font-Roboto font-semibold text-gray-600 opacity-0 max-h-0 overflow-hidden transition-all duration-500">
                     <p>"Skvělý obchod! Produkty jsou kvalitní, ceny jsou příznivé a zákaznická podpora je na vysoké úrovni. Určitě se sem vrátím!"</p>
                 </div>
             </div>
@@ -74,7 +74,7 @@
                 <div class="flex mb-2 stars-only">
                     <span class="text-yellow-500">★★★★★</span>
                 </div>
-                <div class="review-text text-gray-600 opacity-0 max-h-0 overflow-hidden transition-all duration-500">
+                <div class="review-text font-Roboto font-semibold text-gray-600 opacity-0 max-h-0 overflow-hidden transition-all duration-500">
                     <p>"Velmi spokojen s nákupem, rychlé dodání a přehledná stránka. Doporučuji!"</p>
                 </div>
             </div>

@@ -3,11 +3,11 @@
 @section('content')
 <div class="h-20"> </div>
 <div class="container mx-auto py-10">
-    <h1 class="text-5xl font-semibold text-center mb-8 text-black">Časté dotazy</h1>
+    <h1 class="text-5xl font-semibold font-BebasNeue text-center mb-8 text-black">Časté dotazy</h1>
     <div class="space-y-6">
         <!-- První dotaz -->
         <div>
-            <button class="w-full text-left text-xl font-medium text-black bg-gray-700 px-6 py-4 rounded-lg flex justify-between items-center"
+            <button class="w-full text-left text-xl font-Roboto font-semibold text-black bg-gray-700 px-6 py-4 rounded-lg flex justify-between items-center"
                     onclick="toggleAnswer(this)">
                 Jak dlouho trvá zpracování mé žádosti?
                 <span class="ml-4">+</span>
@@ -19,7 +19,7 @@
 
         <!-- Druhý dotaz -->
         <div>
-            <button class="w-full text-left text-xl font-medium text-black bg-gray-700 px-6 py-4 rounded-lg flex justify-between items-center"
+            <button class="w-full text-left text-xl font-Roboto font-semibold text-black bg-gray-700 px-6 py-4 rounded-lg flex justify-between items-center"
                     onclick="toggleAnswer(this)">
                 Jak mohu kontaktovat podporu?
                 <span class="ml-4">+</span>
@@ -31,7 +31,7 @@
 
         <!-- Třetí dotaz -->
         <div>
-            <button class="w-full text-left text-xl font-medium text-black bg-gray-700 px-6 py-4 rounded-lg flex justify-between items-center"
+            <button class="w-full text-left text-xl font-Roboto font-semibold text-black bg-gray-700 px-6 py-4 rounded-lg flex justify-between items-center"
                     onclick="toggleAnswer(this)">
                 Nabízíte vrácení peněz?
                 <span class="ml-4">+</span>
@@ -43,7 +43,7 @@
 
         <!-- 4 dotaz -->
         <div>
-            <button class="w-full text-left text-xl font-medium text-black bg-gray-700 px-6 py-4 rounded-lg flex justify-between items-center"
+            <button class="w-full text-left text-xl font-Roboto font-semibold text-black bg-gray-700 px-6 py-4 rounded-lg flex justify-between items-center"
                     onclick="toggleAnswer(this)">
                 Kdy mi bude doručeno objednané zboží?
                 <span class="ml-4">+</span>
@@ -55,7 +55,7 @@
 
         <!-- 5 dotaz -->
         <div>
-            <button class="w-full text-left text-xl font-medium text-black bg-gray-700 px-6 py-4 rounded-lg flex justify-between items-center"
+            <button class="w-full text-left text-xl font-Roboto font-semibold text-black bg-gray-700 px-6 py-4 rounded-lg flex justify-between items-center"
                     onclick="toggleAnswer(this)">
                 Zasíláte i na Slovensko?
                 <span class="ml-4">+</span>
@@ -67,7 +67,7 @@
 
         <!-- 6 dotaz -->
         <div>
-            <button class="w-full text-left text-xl font-medium text-black bg-gray-700 px-6 py-4 rounded-lg flex justify-between items-center"
+            <button class="w-full text-left text-xl font-Roboto font-semibold text-black bg-gray-700 px-6 py-4 rounded-lg flex justify-between items-center"
                     onclick="toggleAnswer(this)">
                 Reklamace
                 <span class="ml-4">+</span>

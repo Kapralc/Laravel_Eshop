@@ -82,8 +82,14 @@ class ProductController extends Controller
     public function search(Request $request)
     {
         $query = $request->input('query');
-        $products = Product::where('name', 'LIKE', "%{$query}%")->get();
-        return view('products.index', compact('products'));
+    
+        // Vyhledávání produktů podle názvu nebo popisu
+        $products = Product::where('name', 'LIKE', "%{$query}%")
+            ->orWhere('description', 'LIKE', "%{$query}%")
+            ->get();
+    
+        // Vrátí pohled s výsledky vyhledávání
+        return view('products.search-results', compact('products', 'query'));
     }
 
     /**

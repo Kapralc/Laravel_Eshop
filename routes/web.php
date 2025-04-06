@@ -45,6 +45,6 @@ Route::post('/checkout', [CheckoutController::class, 'process'])->name('checkout
 Route::get('/checkout/success', [CheckoutController::class, 'success'])->name('checkout.success');
 
 Route::get('payment/success', [CheckoutController::class, 'paymentSuccess'])->name('payment.success');
-
+Route::get('/products/search', [ProductController::class, 'search'])->name('products.search');
 
 require __DIR__.'/auth.php';

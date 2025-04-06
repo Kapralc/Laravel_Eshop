@@ -64,9 +64,13 @@
         </div>
     </div>
     <div class="mt-6">
-        <button type="button" class="inline-block px-8 py-3 text-white bg-green-500 rounded-md hover:bg-green-600 transition w-full lg:w-auto" onclick="showConfirmationBox({{ $product->id }})">
-            Přidat do košíku
-        </button>
+    <form action="{{ route('cart.add', $product->id) }}" method="POST">
+    @csrf
+    <button onclick="addToCart('{{ $product->id }}')" 
+        class="inline-block px-8 py-3 text-white bg-blue-500 rounded-md hover:shadow-xl transition-all duration-300 w-full lg:w-auto text-center font-semibold shadow-md">
+        Přidat do košíku
+    </button>
+</form>
     </div>
 </div>
 </div>
@@ -74,7 +78,7 @@
 <!-- Recenze -->
 <div class="p-8 m-8">
     <div class="mt-8 p-6 bg-white shadow-lg rounded-lg">
-        <h2 class="text-2xl font-semibold text-gray-800 mb-4">Hodnocení zákazníků</h2>
+        <h2 class="text-2xl font-BebasNeue font-semibold text-gray-800 mb-4">Hodnocení zákazníků</h2>
 
         @if($product->reviews->count() > 0)
             @foreach($product->reviews as $review)
@@ -100,7 +104,7 @@
                     @csrf
                     <input type="hidden" name="product_id" value="{{ $product->id }}">
                     <div class="mb-4">
-                        <label for="rating" class="block text-lg font-medium text-gray-700">Hodnocení</label>
+                        <label for="rating" class="block text-lg font-Roboto font-semibold text-gray-700">Hodnocení</label>
                         <select name="rating" id="rating" required class="mt-1 block w-full border-gray-300 rounded-md shadow-sm">
                             <option value="5">⭐️⭐️⭐️⭐️⭐️ - Výborné</option>
                             <option value="4">⭐️⭐️⭐️⭐️ - Dobré</option>
@@ -110,7 +114,7 @@
                         </select>
                     </div>
                     <div class="mb-4">
-                        <label for="comment" class="block text-lg font-medium text-gray-700">Komentář</label>
+                        <label for="comment" class="block text-lg font-Roboto font-semibold text-gray-700">Komentář</label>
                         <textarea name="comment" id="comment" rows="3" required class="mt-1 block w-full border-gray-300 rounded-md shadow-sm"></textarea>
                     </div>
                     <button type="submit" class="bg-blue-500 text-white py-2 px-6 rounded-md">Odeslat recenzi</button>

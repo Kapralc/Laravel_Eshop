@@ -20,3 +20,7 @@
         font-family: BebasNeue;
         src: url("../../public/fonts/BebasNeue/BebasNeue-Regular.ttf");
     }
+    @font-face {
+        font-family: Roboto;
+        src: url("../../public/fonts/Roboto/Roboto-Regular.ttf");
+    }

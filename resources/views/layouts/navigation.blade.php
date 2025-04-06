@@ -6,7 +6,7 @@
                 <div class="shrink-0 flex items-center">
                     <a href="{{ route('home') }}" class="flex items-center space-x-3 transition-all duration-300 transform hover:scale-105 hover:opacity-80">
                         <img src="{{ asset('images/logo.png') }}" alt="Logo" class="h-10 w-auto">
-                        <span class="text-2xl font-bold text-gray-800 dark:text-gray-200 transition-all duration-300 transform hover:text-yellow-500">IronFit</span>
+                        <span class="text-2xl font-bold text-gray-800 dark:text-gray-200 transition-all duration-300 transform">IronFit</span>
                     </a>
                 </div>
 
@@ -22,10 +22,10 @@
     {{ __('Kontakt') }}
 </a>
 <a href="{{ route('questions.index') }}" class="{{ request()->routeIs('questions.index') ? 'text-blue-500 border-b-2 border-blue-500' : 'text-gray-500 hover:text-gray-700' }} flex items-center h-full">
-    {{ __('Q&A') }}
+    {{ __('Otázky') }}
 </a>
                     <form method="GET" action="{{ route('products.search') }}" class="relative">
-                        <input type="text" name="query" placeholder="Search..." class="border rounded-md p-2 mt-3 focus:ring-2 focus:ring-blue-500 focus:outline-none" />
+                        <input type="text" name="query" placeholder="Vyhledat..." class="border rounded-md p-2 mt-3 focus:ring-2 focus:ring-blue-500 focus:outline-none" />
                         <button type="submit" class="absolute right-0 top-0 mt-6 mr-2">
                             <svg class="h-6 w-6 text-gray-500 hover:text-blue-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
                                 <path fill="currentColor" d="M12.3 13.4c1.2-1.5 2-3.4 2-5.4C14.3 3.6 11.3 0 7 0S-0.3 3.6-0.3 7c0 3.4 2.7 6 6 6 2.1 0 3.9-.8 5.4-2 1.4 1.5 2.4 3.5 2.4 5.6h1.5c0-2.8-1-5.4-2.6-7.3zm-5.3 0C5 14.3 3 16 0 16c1.2 2 3.6 2 6 0 1-1 2-3 2-5.5zm1-6.4C8 3.5 9 2 9 2c1 0 3 1.4 3 2.1 0 .5-.4 1-1 1-.5 0-1 0-1-.5 0 0-.5-.5-1-1z" />
@@ -82,7 +82,7 @@
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-black dark:text-gray-400" viewBox="0 0 24 24" fill="currentColor">
                     <path d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13l-1.6-8M7 13l1 5h8l1-5M9 18a1 1 0 100 2 1 1 0 000-2m6 0a1 1 0 100 2 1 1 0 000-2"/>
                 </svg>
-                <span class="ml-2">{{ __('Cart') }}</span>
+                <span class="ml-2">{{ __('Košík') }}</span>
 
                 @if(session('cart') && count(session('cart')) > 0)
                     <span class="absolute top-1 right-1 bg-red-500 text-white text-xs font-bold rounded-full h-5 w-5 flex items-center justify-center">

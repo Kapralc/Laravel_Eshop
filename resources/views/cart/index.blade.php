@@ -3,7 +3,7 @@
 @section('content')
 <div class="h-20"></div>
 <div class="container py-10 mx-auto max-w-6xl">
-    <h1 class="text-4xl font-semibold text-center text-black mb-8">Nákupní Košík</h1>
+    <h1 class="text-4xl font-semibold font-BebasNeue text-center text-black mb-8">Nákupní Košík</h1>
 
     <div class="text-center mb-4 mt-8">
         <a href="{{ route('products.index') }}" class="inline-block px-8 py-3 text-white bg-blue-600 rounded-lg shadow-md hover:bg-blue-700 transition duration-300 ease-in-out">
@@ -17,7 +17,7 @@
         @endphp
 
         <div class="overflow-x-auto bg-white shadow-lg rounded-lg">
-            <table class="min-w-full table-auto text-gray-800">
+            <table class="min-w-full table-auto font-Roboto text-gray-800">
                 <thead class="bg-blue-600 text-white">
                     <tr>
                         <th class="px-6 py-3 text-left">Produkt</th>
@@ -33,7 +33,7 @@
                             $itemTotal = $item['price'] * $item['quantity'];
                             $totalPrice += $itemTotal;
                         @endphp
-                        <tr class="border-b border-gray-200 hover:bg-gray-100 text-black">
+                        <tr class="border-b border-gray-200 font-semibold hover:bg-gray-100 text-black">
                             <td class="px-6 py-4 text-sm font-medium">{{ $item['name'] }}</td>
                             <td class="px-6 py-4 text-sm">${{ $item['price'] }}</td>
                             <td class="px-6 py-4 text-sm">
