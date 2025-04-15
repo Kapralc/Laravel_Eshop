@@ -36,33 +36,81 @@
 </div>
 
     <!-- Why Choose Us Section -->
-    <div id="why-choose-us" class="py-10 text-center bg-gray-100 dark:bg-gray-800" data-aos="fade-up" data-aos-duration="1500">
-        <h2 class="text-3xl font-semibold font-BebasNeue text-gray-900 dark:text-white">Proč nakupovat u nás?</h2>
-        <p class="mt-4 text-lg font-Roboto font-semibold text-gray-700 dark:text-gray-300">Nabízíme nejlepší produkty za nejlepší ceny!</p>
-        <div class="mt-6 flex flex-wrap justify-center gap-6">
-            <div class="bg-white dark:bg-gray-700 shadow-md rounded-lg p-6 max-w-xs" data-aos="fade-right" data-aos-duration="1500">
-                <div class="flex justify-center">
-                    <x-heroicon-o-truck class="h-16 w-16 text-gray-900 dark:text-gray-300"></x-heroicon-o-truck>
+<section id="why-choose-us" class="py-16 bg-gradient-to-b from-gray-50 to-gray-100 dark:from-gray-800 dark:to-gray-900">
+    <div class="container mx-auto px-4">
+        <div class="text-center mb-12" data-aos="fade-up" data-aos-duration="1000">
+            <h2 class="text-4xl font-BebasNeue font-bold text-gray-900 dark:text-white mb-4">Proč nakupovat u nás?</h2>
+            <div class="w-24 h-1 bg-indigo-600 dark:bg-indigo-400 mx-auto mb-6"></div>
+            <p class="text-xl font-Roboto text-gray-700 dark:text-gray-300 max-w-2xl mx-auto">Nabízíme nejlepší produkty za nejlepší ceny s garancí spokojenosti!</p>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+            <!-- Fast Delivery Card -->
+            <div class="group relative overflow-hidden rounded-xl bg-white dark:bg-gray-800 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2" data-aos="fade-up" data-aos-delay="100">
+                <div class="absolute top-0 left-0 w-2 h-full bg-indigo-600 dark:bg-indigo-400"></div>
+                <div class="p-8">
+                    <div class="flex justify-center mb-6">
+                        <div class="p-4 rounded-full bg-indigo-50 dark:bg-gray-700 text-indigo-600 dark:text-indigo-400 transform group-hover:scale-110 transition-transform duration-300">
+                            <x-heroicon-o-truck class="h-12 w-12"></x-heroicon-o-truck>
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-4 text-center">Rychlá Doprava</h3>
+                    <p class="text-gray-700 dark:text-gray-300 text-center font-Roboto">Zaručujeme rychlé dodání vašich objednávek po celé České republice do 24-48 hodin.</p>
                 </div>
-                <h3 class="text-lg font-bold text-gray-900 dark:text-white">Rychlá Doprava</h3>
-                <p class="mt-2 font-Roboto font-semibold text-gray-700 dark:text-gray-300">Zaručujeme rychlé dodání vašich objednávek.</p>
             </div>
-            <div class="bg-white dark:bg-gray-700 shadow-md rounded-lg p-6 max-w-xs" data-aos="fade-up" data-aos-duration="1500">
-                <div class="flex justify-center">
-                    <x-iconsax-bro-sidebar-right class="h-16 w-16 text-gray-900 dark:text-gray-300"></x-iconsax-bro-sidebar-right>
+            
+            <!-- Quality Products Card -->
+            <div class="group relative overflow-hidden rounded-xl bg-white dark:bg-gray-800 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2" data-aos="fade-up" data-aos-delay="200">
+                <div class="absolute top-0 left-0 w-2 h-full bg-indigo-600 dark:bg-indigo-400"></div>
+                <div class="p-8">
+                    <div class="flex justify-center mb-6">
+                        <div class="p-4 rounded-full bg-indigo-50 dark:bg-gray-700 text-indigo-600 dark:text-indigo-400 transform group-hover:scale-110 transition-transform duration-300">
+                            <x-iconsax-bro-sidebar-right class="h-12 w-12"></x-iconsax-bro-sidebar-right>
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-4 text-center">Kvalitní Produkty</h3>
+                    <p class="text-gray-700 dark:text-gray-300 text-center font-Roboto">Naše produkty procházejí důkladným výběrem kvality a testováním, abychom zajistili vaši spokojenost.</p>
                 </div>
-                <h3 class="text-lg font-bold text-gray-900 dark:text-white">Kvalitní Produkty</h3>
-                <p class="mt-2 font-Roboto font-semibold text-gray-700 dark:text-gray-300">Naše produkty procházejí důkladným výběrem kvality.</p>
             </div>
-            <div class="bg-white dark:bg-gray-700 shadow-md rounded-lg p-6 max-w-xs" data-aos="fade-left" data-aos-duration="1500">
-                <div class="flex justify-center">
-                    <x-gmdi-support-agent-o class="h-16 w-16 text-gray-900 dark:text-gray-300"></x-gmdi-support-agent-o>
+            
+            <!-- Customer Support Card -->
+            <div class="group relative overflow-hidden rounded-xl bg-white dark:bg-gray-800 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2" data-aos="fade-up" data-aos-delay="300">
+                <div class="absolute top-0 left-0 w-2 h-full bg-indigo-600 dark:bg-indigo-400"></div>
+                <div class="p-8">
+                    <div class="flex justify-center mb-6">
+                        <div class="p-4 rounded-full bg-indigo-50 dark:bg-gray-700 text-indigo-600 dark:text-indigo-400 transform group-hover:scale-110 transition-transform duration-300">
+                            <x-gmdi-support-agent-o class="h-12 w-12"></x-gmdi-support-agent-o>
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-4 text-center">Zákaznická Podpora</h3>
+                    <p class="text-gray-700 dark:text-gray-300 text-center font-Roboto">Jsme tu pro vás 7 dní v týdnu, abychom zodpověděli všechny vaše dotazy a pomohli vám s výběrem.</p>
                 </div>
-                <h3 class="text-lg font-bold text-gray-900 dark:text-white">Zákaznická Podpora</h3>
-                <p class="mt-2 font-Roboto font-semibold text-gray-700 dark:text-gray-300">Jsme tu pro vás, abychom zodpověděli všechny vaše dotazy.</p>
+            </div>
+        </div>
+        
+        <!-- Additional Trust Indicators -->
+        <div class="flex flex-wrap justify-center gap-8 mt-12" data-aos="fade-up" data-aos-delay="400">
+            <div class="flex items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-green-500 dark:text-green-400 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                </svg>
+                <span class="text-gray-700 dark:text-gray-300 font-Roboto">Bezpečná platba</span>
+            </div>
+            <div class="flex items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-green-500 dark:text-green-400 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                </svg>
+                <span class="text-gray-700 dark:text-gray-300 font-Roboto">Záruka vrácení peněz</span>
+            </div>
+            <div class="flex items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-green-500 dark:text-green-400 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                </svg>
+                <span class="text-gray-700 dark:text-gray-300 font-Roboto">100% originální produkty</span>
             </div>
         </div>
     </div>
+</section>
 
 
    

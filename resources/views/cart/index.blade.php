@@ -35,12 +35,12 @@
                         @endphp
                         <tr class="border-b border-gray-200 font-semibold hover:bg-gray-100 text-black">
                             <td class="px-6 py-4 text-sm font-medium">{{ $item['name'] }}</td>
-                            <td class="px-6 py-4 text-sm">${{ $item['price'] }}</td>
+                            <td class="px-6 py-4 text-sm">{{ $item['price'] }}kč</td>
                             <td class="px-6 py-4 text-sm">
                                 <input type="number" name="quantity" class="quantity-input w-16 border p-2 text-center" 
                                        data-id="{{ $id }}" value="{{ $item['quantity'] }}" min="1">
                             </td>
-                            <td class="px-6 py-4 text-sm" id="total-price-{{ $id }}">${{ number_format($itemTotal, 2) }}</td>
+                            <td class="px-6 py-4 text-sm" id="total-price-{{ $id }}">{{ number_format($itemTotal, 2) }}kč</td>
                             <td class="px-6 py-4 text-sm">
                                 <form action="{{ route('cart.remove', $id) }}" method="POST" class="inline-block">
                                     @csrf
